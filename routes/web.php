@@ -2,6 +2,7 @@
 
 use App\Livewire\AboutComponent;
 use App\Livewire\ContactComponent;
+use App\Livewire\GetQuoteComponent;
 use App\Livewire\HomeComponent;
 use App\Livewire\OurLocationComponent;
 use App\Livewire\Services\BouncersComponent;
@@ -29,9 +30,10 @@ Route::get('/about', AboutComponent::class)->name('about');
 Route::get('/contact', ContactComponent::class)->name('contact');
 Route::get('/our-location', OurLocationComponent::class)->name('our-location');
 Route::get('/services', ServicesComponent::class)->name('services');
+Route::get('/get-quote', GetQuoteComponent::class)->name('get-quote');
 
 // Service Pages
-Route::prefix('services')->name('services.')->group(function () {
+
     Route::get('/retail-security', RetailSecurityComponent::class)->name('retail-security');
     Route::get('/concierge', ConciergeComponent::class)->name('concierge');
     Route::get('/key-holding', KeyHoldingComponent::class)->name('key-holding');
@@ -45,7 +47,7 @@ Route::prefix('services')->name('services.')->group(function () {
     Route::get('/security-dogs', SecurityDogsComponent::class)->name('security-dogs');
     Route::get('/escort', EscortComponent::class)->name('escort');
     Route::get('/bouncers', BouncersComponent::class)->name('bouncers');
-});
+
 
 
 Route::view('dashboard', 'dashboard')

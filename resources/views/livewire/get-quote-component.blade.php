@@ -1,32 +1,24 @@
 <div>
-     <!-- ========================
-       page title 
+    @include('components.layouts.header')
+
+    <!-- ========================_page title 
     =========================== -->
     <section class="page-title-layout1 page-title-light bg-overlay text-center">
       <div class="bg-img"><img src="assets/images/page-titles/1.jpg" alt="background"></div>
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="pagetitle__heading">Get A Quote</h1>
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.page-title -->
-
-    <div class="breadcrumb-area border-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
+            <h1 class="pagetitle__heading">Request a Quote</h1>
             <nav>
               <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Get A Quote</li>
+                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Get a Quote</li>
               </ol>
             </nav>
           </div><!-- /.col-12 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
-    </div><!-- /.breadcrumb-area -->
+    </section><!-- /.page-title -->
 
     <section class="pb-80">
       <div class="container">
@@ -36,182 +28,118 @@
               <div class="widget widget-help bg-overlay bg-overlay-primary">
                 <div class="bg-img"><img src="assets/images/banners/5.jpg" alt="background"></div>
                 <div class="widget-content">
-                  <h4 class="widget__title">Tailored Solutions For Your Security Priorities</h4>
-                  <p class="widget__desc mb-50">We will design, install, and upgrade solutions to meet
-                    business specific needs and budgets from large.
+                  <h4 class="widget__title">A Tradition of Excellence</h4>
+                  <p class="widget__desc mb-50">At Gatun Security, we provide more than just services; we deliver peace of mind. Our team is ready to conduct a thorough security assessment and provide a detailed, no-obligation quote tailored to your unique requirements.
                   </p>
-                  <a href="tel:+201061245741" class="phone__number">
-                    <i class="icon-phone"></i> <span>002 01061245741</span>
-                  </a>
-                  <a href="get-quote.html#" class="btn btn__white btn__xl btn__block justify-content-between">
-                    <span>Get Started Now</span>
-                    <i class="icon-arrow-right"></i>
+                  <a href="tel:+2348137916721" class="phone__number">
+                    <i class="icon-phone"></i> <span>+234 813 791 6721</span>
                   </a>
                 </div><!-- /.widget-content -->
               </div><!-- /.widget-help -->
               <div class="widget widget-download">
                 <div class="widget-content">
-                  <h4 class="widget__title">Download Brochure</h4>
-                  <a href="get-quote.html#" class="btn btn__secondary btn__block mb-20">
+                  <h4 class="widget__title">Our Company Profile</h4>
+                  <a href="assets/files/gatun_profile.pdf" class="btn btn__secondary btn__block mb-20" download>
                     <i class="icon-download"></i>
-                    <span>Company Report 2022</span>
+                    <span>Download PDF Profile</span>
                   </a>
-                  <a href="get-quote.html#" class="btn btn__primary btn__block">
-                    <i class="icon-download"></i>
-                    <span>Company Brochure</span>
-                  </a>
-                </div><!-- /.widget-content -->
-              </div><!-- /.widget-download -->
+                </div>
+              </div>
             </aside><!-- /.sidebar -->
           </div><!-- /.col-lg-4 -->
           <div class="col-sm-12 col-md-12 col-lg-8">
             <section class="contact-layout4 py-0">
               <div class="contact-panel">
-                <form class="contact-panel__form" method="post" action="https://7oroof.com/demos/sekure/assets/php/contact.php" id="contactForm">
+                <form class="contact-panel__form" method="post" action="#" id="contactForm">
                   <div class="row">
                     <div class="col-sm-12">
-                      <h4 class="contact-panel__title">Request A Quote</h4>
-                      <p class="contact-panel__desc mb-30">Please complete the form below, to request a quote, and
-                        we’ll
-                        be in touch. Or you can call us <strong class="color-secondary">01061245741</strong> and our
-                        specialists will provide the
-                        necessary help!
+                      <h4 class="contact-panel__title">Request a Professional Security Consultation</h4>
+                      <p class="contact-panel__desc mb-30">Please provide as much detail as possible so our expert security consultants can prepare a comprehensive and accurate proposal for you. For immediate assistance, call us at <strong class="color-secondary">+234 813 791 6721</strong>.
                       </p>
                     </div>
+                    <!-- Personal & Company Info -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="First Name" required>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Last Name" required>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Company Name (Optional)">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email Address" required>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone Number" required>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Best Time to Call">
+                      </div>
+                    </div>
+                    <!-- Service Details -->
                     <div class="col-sm-6 col-md-6 col-lg-6">
                       <div class="form-group float-label">
-                        <label for="homeBussiness">Home Or Business?</label>
-                        <select id="homeBussiness" class="form-control">
-                          <option>For Home</option>
-                          <option>For Business</option>
+                        <label for="propertyType">Type of Property</label>
+                        <select id="propertyType" class="form-control">
+                          <option>Commercial</option>
+                          <option>Residential</option>
+                          <option>Event Venue</option>
+                          <option>Industrial Site</option>
+                          <option>Other</option>
                         </select>
                       </div>
-                    </div><!-- /.col-lg-6 -->
+                    </div>
                     <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group float-label">
-                        <label for="Industry">Industry:</label>
-                        <select id="Industry" class="form-control">
-                          <option>Commercial Buildings</option>
-                          <option>Commercial Buildings</option>
-                        </select>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Location of Service" required>
                       </div>
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group float-label">
-                        <label for="size">System Size:</label>
-                        <select id="size" class="form-control">
-                          <option>Small (1-5 locations)</option>
-                          <option>large (6-10 locations)</option>
-                        </select>
-                      </div>
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group float-label">
-                        <label for="own">Own Or Rent?</label>
-                        <select id="own" class="form-control">
-                          <option>I'm representing occupant</option>
-                          <option>other</option>
-                        </select>
-                      </div>
-                    </div><!-- /.col-lg-6 -->
+                    </div>
+                    <!-- Services of Interest -->
                     <div class="col-12">
                       <div class="form-group mb-10">
-                        <label class="mb-20">System Of Interest:</label>
-                        <div>
-                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                            <input type="checkbox" class="custom-control-input" id="Intrusion">
-                            <label class="custom-control-label" for="Intrusion">Intrusion Detection</label>
+                        <label class="mb-20">Services of Interest (Select all that apply):</label>
+                        <div class="row">
+                          <div class="col-sm-6 col-md-4">
+                            <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="retail"><label class="custom-control-label" for="retail">Retail Security</label></div>
+                            <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="concierge"><label class="custom-control-label" for="concierge">Concierge</label></div>
+                            <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="keyholding"><label class="custom-control-label" for="keyholding">Key Holding</label></div>
+                            <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="sialicense"><label class="custom-control-label" for="sialicense">SIA License Staff</label></div>
                           </div>
-                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                            <input type="checkbox" class="custom-control-input" id="Surveillance">
-                            <label class="custom-control-label" for="Surveillance">Video Surveillance</label>
+                          <div class="col-sm-6 col-md-4">
+                            <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="alarmresponse"><label class="custom-control-label" for="alarmresponse">Rapid Alarm Response</label></div>
+                            <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="siadoor"><label class="custom-control-label" for="siadoor">SIA Door Supervisors</label></div>
+                            <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="mobileguarding"><label class="custom-control-label" for="mobileguarding">24-Hour Mobile Guarding</label></div>
+                            <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="callout"><label class="custom-control-label" for="callout">24-Hour Call Out</label></div>
                           </div>
-                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                            <input type="checkbox" class="custom-control-input" id="Integration">
-                            <label class="custom-control-label" for="Integration">System Integration</label>
-                          </div>
-                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                            <input type="checkbox" class="custom-control-input" id="Monitoring">
-                            <label class="custom-control-label" for="Monitoring">Monitoring</label>
-                          </div>
-                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                            <input type="checkbox" class="custom-control-input" id="fire">
-                            <label class="custom-control-label" for="fire">Fire Detection</label>
-                          </div>
-                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                            <input type="checkbox" class="custom-control-input" id="Control">
-                            <label class="custom-control-label" for="Control">Access Control</label>
-                          </div>
-                          <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                            <input type="checkbox" class="custom-control-input" id="Other">
-                            <label class="custom-control-label" for="Other">Other</label>
+                          <div class="col-sm-6 col-md-4">
+                            <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="cctv"><label class="custom-control-label" for="cctv">CCTV & Monitoring</label></div>
+                            <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="events"><label class="custom-control-label" for="events">Site & Event Security</label></div>
+                            <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="k9"><label class="custom-control-label" for="k9">Security Dogs (K9)</label></div>
+                            <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="escort"><label class="custom-control-label" for="escort">Escort / Close Protection</label></div>
                           </div>
                         </div>
                       </div>
-                    </div><!-- /.col-lg-12 -->
-                    <div class="col-12">
-                      <label class="mb-20">Kindly provide your personal informations below :</label>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="First Name">
-                      </div>
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Last Name">
-                      </div>
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Email Address">
-                      </div>
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Phone Number">
-                      </div>
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Company Name">
-                      </div>
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Country">
-                      </div>
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="City">
-                      </div>
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Address">
-                      </div>
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Zipcode">
-                      </div>
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Best Installation Times">
-                      </div>
-                    </div><!-- /.col-lg-6 -->
+                    <!-- Message & Submit -->
                     <div class="col-12">
                       <div class="form-group">
-                        <textarea class="form-control" placeholder="How can we help?!!"></textarea>
+                        <textarea class="form-control" placeholder="Please describe your security needs in detail"></textarea>
                       </div>
                       <button type="submit" class="btn btn__secondary btn__xl">
-                        <i class="icon-arrow-right icon-filled"></i> <span>Submit Request</span>
+                        <i class="icon-arrow-right icon-filled"></i> <span>Submit Secure Request</span>
                       </button>
-                      <p class="mt-30 mb-0">By submitting your information, you agree that our specialists may contact
-                        me via text messages or phone calls and to use your data in accordance with our Privacy Policy.
-                      </p>
                       <div class="contact-result"></div>
                     </div>
                   </div><!-- /.row -->

@@ -1,252 +1,220 @@
 <div>
+    @include('components.layouts.header')
 
-    <!-- ========================
-       page title 
+    <!-- ========================_page title 
     =========================== -->
     <section class="page-title-layout1 page-title-light bg-overlay text-center">
-      <div class="bg-img"><img src="assets/images/page-titles/7.jpg" alt="background"></div>
+      <div class="bg-img"><img src="assets/images/page-titles/1.jpg" alt="background"></div>
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="pagetitle__heading mb-0">Locations</h1>
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.page-title -->
-    <div class="breadcrumb-area border-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
+            <h1 class="pagetitle__heading">Our Locations</h1>
             <nav>
               <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="about-us.html">Company</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Locations</li>
               </ol>
             </nav>
           </div><!-- /.col-12 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
-    </div><!-- /.breadcrumb-area -->
+    </section><!-- /.page-title -->
 
     <!-- =========================== 
       locations
     ============================= -->
-    <section class="locations pb-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="locations-panel">
-              <div class="locations__panel-header">
-                <h4 class="locations__panel-title">Africa</h4>
-              </div><!-- /.locations-panel-header -->
-              <ul class="list-unstyled">
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Alexandria</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Tanger</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>East Africa</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Togo</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Cairo (Airport Office)</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Antananarivo</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Matshapa</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Angola</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Casablanca</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Mauritius Airport Office</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Port Harcourt</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Luanda</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Port Said</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Port Louis</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Mahe</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Tanzania</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Nairobi</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Ghana</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Manica Malawi</span></a></li>
-              </ul>
-            </div><!-- /.locations-panel -->
-            <div class="locations-panel">
-              <div class="locations__panel-header">
-                <h4 class="locations__panel-title">Asia</h4>
-              </div><!-- /.locations-panel-header -->
-              <ul class="list-unstyled">
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Ahmedabad</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Chennai</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Kerteh</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Port Klang</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Bangalore</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Bangalore</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Kolkata</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Qingdao</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Bangkok</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Danang</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Kuala Lumpur</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Raigad Navi Mumbai</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Baroda</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Gandhidham</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Kuantan</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Semarang</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Beijing</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Ho Chi Minh</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Medan</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Seoul</span></a></li>
-              </ul>
-            </div><!-- /.locations-panel -->
-            <div class="locations-panel">
-              <div class="locations__panel-header">
-                <h4 class="locations__panel-title">Europe</h4>
-              </div><!-- /.locations-panel-header -->
-              <ul class="list-unstyled">
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Amsterdam</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Frankfurt</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Madrid</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Orey</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Ankara</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Gaziemir</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Malpensa</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Belarus</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Antwerp</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Hamburg</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Manchester</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Ukraine</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Barcelona</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Istanbul</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Marseille</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Portland</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Brussels</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Izmir</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Mersin</span></a></li>
-              </ul>
-            </div><!-- /.locations-panel -->
-            <div class="locations-panel">
-              <div class="locations__panel-header">
-                <h4 class="locations__panel-title">Middle East</h4>
-              </div><!-- /.locations-panel-header -->
-              <ul class="list-unstyled">
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Al-Kazemi</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Muscat</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Islamabad</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Sharjah</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Abu Dhabi</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Sharjah</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Kabul</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Beirut</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Doha</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Sohar</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Karachi</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Muscat</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Dammam</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Sohar Port</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Lahore</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Jeddah</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Bahrain</span></a></li>
-                <li><a href="locations.html#"><i class="fa fa-map-marker-alt"></i><span>Riyadh</span></a></li>
-              </ul>
-            </div><!-- /.locations-panel -->
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.locations -->
+    <section class="contact-layout1 pt-130 pb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading-layout2 text-center mb-50">
+                        <h2 class="heading__subtitle">Find Us Across Nigeria & Europe</h2>
+                        <h3 class="heading__title">Our Office Locations</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Corporate Head Office -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="contact-panel__info p-lg-0 ">
+                        <h4 class="contact-panel__title">Corporate Head Office</h4>
+                        <ul class="list-unstyled ">
+                            <li>KM 10 old lagos-Ibadan Expressway, (Beside Lamlab Filling Station) Opere Podo Road, Ibadan</li>
+                            <li>Tel: <a href="tel:08112888435">08112888435</a>, <a href="tel:08143337439">08143337439</a>, <a href="tel:08137916721">08137916721</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lagos Office -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="contact-panel__info p-lg-0">
+                        <h4 class="contact-panel__title">Lagos Office</h4>
+                        <ul class="list-unstyled">
+                            <li>No 7, Ikorodu Road, by palace (behinde BRT. Bus stop) Maryland, Lagos.</li>
+                            <li>Email: <a href="mailto:lagosoffice@gatunsecurity.com">lagosoffice@gatunsecurity.com</a></li>
+                            <li>Tel: <a href="tel:09051023015">09051023015</a>, <a href="tel:08158998718">08158998718</a>, <a href="tel:08137916721">08137916721</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Abuja Office -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="contact-panel__info p-lg-0">
+                        <h4 class="contact-panel__title">Abuja Office</h4>
+                        <ul class="list-unstyled">
+                            <li>4 Dambata Close, Area 7, Garki FCT- Abuja</li>
+                            <li>Email: <a href="mailto:abujaoffice@gatunsecurity.com">abujaoffice@gatunsecurity.com</a></li>
+                            <li>Tel: <a href="tel:70020015">70020015</a>, <a href="tel:07025773838">07025773838</a>, <a href="tel:08137916721">08137916721</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Ilorin Office -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="contact-panel__info p-lg-0">
+                        <h4 class="contact-panel__title">Ilorin Office</h4>
+                        <ul class="list-unstyled">
+                            <li>6, Oladipo Street, Behind Life Care Hospital, Gaa Akanbi, Ilorin-Kwara State.</li>
+                            <li>Email: <a href="mailto:ilorinoffice@gatunsecurity.com">ilorinoffice@gatunsecurity.com</a></li>
+                            <li>Tel: <a href="tel:08038674876">08038674876</a>, <a href="tel:07031546980">07031546980</a>, <a href="tel:08137916721">08137916721</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Ife Office -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="contact-panel__info p-lg-0">
+                        <h4 class="contact-panel__title">Ife Office</h4>
+                        <ul class="list-unstyled ">
+                            <li>Chief Adeyemi Olusola Lawson Layout, Along Ife/Ibadan Road, Modakeke, Ife, Osun State, Nigeria</li>
+                            <li>Tel: <a href="tel:09133116309">09133116309</a>, <a href="tel:08112888425">08112888425</a>, <a href="tel:08137916721">08137916721</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Osogbo Office -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="contact-panel__info p-lg-0">
+                        <h4 class="contact-panel__title">Osogbo Office</h4>
+                        <ul class="list-unstyled">
+                            <li>Opp. Aktolat Filling Station, Prime Area, Ofatedo, Osun State</li>
+                            <li>Tel: <a href="tel:08112888425">08112888425</a>, <a href="tel:08143337439">08143337439</a>, <a href="tel:08137916721">08137916721</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Akure Office -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="contact-panel__info p-lg-0">
+                        <h4 class="contact-panel__title">Akure Office</h4>
+                        <ul class="list-unstyled">
+                            <li>Akure South Shopping Complex, Ondo Road- Akure</li>
+                            <li>Tel: <a href="tel:08038443934">08038443934</a>, <a href="tel:08143337439">08143337439</a>, <a href="tel:08137916721">08137916721</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Okitipupa Office -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="contact-panel__info p-lg-0">
+                        <h4 class="contact-panel__title">Okitipupa Office</h4>
+                        <ul class="list-unstyled">
+                            <li>No 20 Lebi Street, Okitipupa</li>
+                            <li>Tel: <a href="tel:08166564513">08166564513</a>, <a href="tel:08143337439">08143337439</a>, <a href="tel:08137916721">08137916721</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- ==========================
+       <!-- ==========================
         contact layout 3
     =========================== -->
-    <section class="contact-layout3 bg-overlay bg-overlay-primary bg-overlay-primary-gradient">
+   <section class="contact-layout3 bg-overlay bg-overlay-primary bg-overlay-primary-gradient">
       <div class="bg-img"><img src="assets/images/banners/5.jpg" alt="banner"></div>
       <div class="container">
         <div class="contact-panel p-0">
           <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-7">
+            <div class="col-sm-12 col-md-12 col-lg-12">
               <form class="contact-panel__form" method="post" action="https://7oroof.com/demos/sekure/assets/php/contact.php" id="contactForm">
                 <div class="row">
                   <div class="col-sm-12">
-                    <h4 class="contact-panel__title">Request A Quote</h4>
-                    <p class="contact-panel__desc mb-30">Please complete the form below, to request a quote, and we’ll
-                      be in touch. Or you can call us <strong class="color-secondary">01061245741</strong> and our
-                      specialists will provide the
-                      necessary help!
-                    </p>
+                    <h4 class="contact-panel__title">Request a Professional Security Quote</h4>
+                    <p class="contact-panel__desc mb-30">Please complete the form below to receive a customized quote for your security needs. We'll be in touch shortly. For immediate assistance, you can also call us directly at <strong class="color-secondary">+234 813 791 6721</strong>.</p>
                   </div>
                   <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group float-label">
-                      <label for="homeBussiness">Home Or Business?</label>
-                      <select id="homeBussiness" class="form-control">
-                        <option>For Home</option>
-                        <option>For Business</option>
+                      <label for="serviceType">Service Type:</label>
+                      <select id="serviceType" class="form-control">
+                        <option>For a Business</option>
+                        <option>For an Individual</option>
+                        <option>For a Private Event</option>
                       </select>
                     </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
+                  </div><div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group float-label">
-                      <label for="Industry">Industry:</label>
-                      <select id="Industry" class="form-control">
-                        <option>Commercial Buildings</option>
-                        <option>Commercial Buildings</option>
+                      <label for="location">Location:</label>
+                      <select id="location" class="form-control">
+                        <option>Nigeria</option>
+                        <option>Manchester, UK</option>
+                        <option>Dublin, Ireland</option>
+                        <option>Other (Please specify in message)</option>
                       </select>
                     </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
+                  </div><div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group float-label">
-                      <label for="size">System Size:</label>
-                      <select id="size" class="form-control">
-                        <option>Small (1-5 locations)</option>
-                        <option>large (6-10 locations)</option>
+                      <label for="profile">Security Profile:</label>
+                      <select id="profile" class="form-control">
+                        <option>High Profile</option>
+                        <option>Low Profile</option>
                       </select>
                     </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
+                  </div><div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group float-label">
-                      <label for="own">Own Or Rent?</label>
+                      <label for="own">Gender of Personnel:</label>
                       <select id="own" class="form-control">
-                        <option>I'm representing occupant</option>
-                        <option>other</option>
+                        <option>Male Guards</option>
+                        <option>Female Guards</option>
+                        <option>Both Male and Female</option>
                       </select>
                     </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
+                  </div><div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group">
                       <input type="text" class="form-control" placeholder="First Name">
                     </div>
-                  </div><!-- /.col-lg-4 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
+                  </div><div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group">
                       <input type="text" class="form-control" placeholder="Last Name">
                     </div>
-                  </div><!-- /.col-lg-4 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
+                  </div><div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group">
                       <input type="text" class="form-control" placeholder="Email Address">
                     </div>
-                  </div><!-- /.col-lg-4 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
+                  </div><div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group">
                       <input type="text" class="form-control" placeholder="Phone Number">
                     </div>
-                  </div><!-- /.col-lg-4 -->
-                  <div class="col-12">
+                  </div><div class="col-12">
                     <div class="form-group mb-10">
-                      <label>System Of Interest:</label>
+                      <label>Services of Interest:</label>
                       <div>
                         <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                          <input type="checkbox" class="custom-control-input" id="Intrusion">
-                          <label class="custom-control-label" for="Intrusion">Intrusion Detection</label>
+                          <input type="checkbox" class="custom-control-input" id="close-protection">
+                          <label class="custom-control-label" for="close-protection">Retail retail_security</label>
                         </div>
                         <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                          <input type="checkbox" class="custom-control-input" id="Surveillance">
-                          <label class="custom-control-label" for="Surveillance">Video Surveillance</label>
+                          <input type="checkbox" class="custom-control-input" id="door-supervision">
+                          <label class="custom-control-label" for="door-supervision">Concierge Services</label>
                         </div>
                         <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                          <input type="checkbox" class="custom-control-input" id="Integration">
-                          <label class="custom-control-label" for="Integration">System Integration</label>
+                          <input type="checkbox" class="custom-control-input" id="gate-monitoring">
+                          <label class="custom-control-label" for="gate-monitoring">Key Holding</label>
                         </div>
                         <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                          <input type="checkbox" class="custom-control-input" id="Monitoring">
-                          <label class="custom-control-label" for="Monitoring">Monitoring</label>
+                          <input type="checkbox" class="custom-control-input" id="internal-guards">
+                          <label class="custom-control-label" for="internal-guards">SIA Licensed Staff</label>
                         </div>
                         <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                          <input type="checkbox" class="custom-control-input" id="fire">
-                          <label class="custom-control-label" for="fire">Fire Detection</label>
+                          <input type="checkbox" class="custom-control-input" id="cctv">
+                          <label class="custom-control-label" for="cctv">Rapid Alarm Response</label>
                         </div>
                         <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                          <input type="checkbox" class="custom-control-input" id="Control">
-                          <label class="custom-control-label" for="Control">Access Control</label>
+                          <input type="checkbox" class="custom-control-input" id="bouncers">
+                          <label class="custom-control-label" for="bouncers">SIA Door Supervisors</label>
                         </div>
                         <div class="custom-control custom-checkbox custom-control-inline mb-20">
                           <input type="checkbox" class="custom-control-input" id="Other">
@@ -255,136 +223,11 @@
                       </div>
                     </div>
                     <button type="submit" class="btn btn__secondary btn__xl">
-                      <i class="icon-arrow-right icon-filled"></i> <span>Submit Request</span>
+                      <i class="icon-arrow-right icon-filled"></i> <span>Request Your Quote</span>
                     </button>
                     <div class="contact-result"></div>
-                  </div><!-- /.col-lg-12 -->
-                </div><!-- /.row -->
-              </form>
-            </div><!-- /.col-lg-7 -->
-            <div class="col-sm-12 col-md-12 col-lg-5">
-              <div class="packages-wrapper">
-                <div class="slick-carousel m-slides-0"
-                  data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"arrows": false, "dots": true, "autoplay": true}'>
-                  <!-- pricing item #1-->
-                  <div class="h-100">
-                    <div class="pricing-package">
-                      <div class="package__body">
-                        <h4 class="package__title">Starter Plan</h4>
-                        <p class="package__desc">Our highly trained technicians will set-up your security system so you
-                          don’t
-                          have to. They show you how to work your equipment.</p>
-                        <div class="d-flex mb-40">
-                          <div class="package__icon">
-                            <i class="icon-burglar"></i>
-                          </div><!-- /.package__icon -->
-                          <div class="package__icon">
-                            <i class="icon-intrusion"></i>
-                          </div><!-- /.package__icon -->
-                          <div class="package__icon">
-                            <i class="icon-door-lock"></i>
-                          </div><!-- /.package__icon -->
-                        </div>
-                        <ul class="package__list list-items-layout4 list-unstyled">
-                          <li class="list__item">Enterprise Network Video Recorders</li>
-                          <li class="list__item">Streaming video network or Internet</li>
-                        </ul>
-                      </div><!-- /.package__body -->
-                      <div class="package__footer">
-                        <div class="package__price">
-                          <span class="package__currency">$</span><span>59</span><span
-                            class="package__period">/Month</span>
-                        </div>
-                        <a href="locations.html#" class="btn btn__secondary btn__xl">
-                          <span>Get Started Now</span>
-                          <i class="icon-arrow-right"></i>
-                        </a>
-                      </div><!-- /.package__footer -->
-                    </div><!-- /.pricing-package -->
-                  </div>
-                  <!-- pricing item #2-->
-                  <div class="h-100">
-                    <div class="pricing-package">
-                      <div class="package__body">
-                        <h4 class="package__title">Professional Plan</h4>
-                        <p class="package__desc">Our highly trained technicians will set-up your security system so you
-                          don’t
-                          have to. They show you how to work your equipment.</p>
-                        <div class="d-flex mb-40">
-                          <div class="package__icon">
-                            <i class="icon-home-automation"></i>
-                          </div><!-- /.package__icon -->
-                          <div class="package__icon">
-                            <i class="icon-detector"></i>
-                          </div><!-- /.package__icon -->
-                          <div class="package__icon">
-                            <i class="icon-surveillance"></i>
-                          </div><!-- /.package__icon -->
-                        </div>
-                        <ul class="package__list list-items-layout4 list-unstyled">
-                          <li class="list__item">Enterprise Network Video Recorders</li>
-                          <li class="list__item">Streaming video network or Internet</li>
-                          <li class="list__item">Intelligent video technology storage</li>
-                        </ul>
-                      </div><!-- /.package__body -->
-                      <div class="package__footer">
-                        <div class="package__price">
-                          <span class="package__currency">$</span><span>159</span><span
-                            class="package__period">/Month</span>
-                        </div>
-                        <a href="locations.html#" class="btn btn__primary btn__xl">
-                          <span>Get Started Now</span>
-                          <i class="icon-arrow-right"></i>
-                        </a>
-                      </div><!-- /.package__footer -->
-                    </div><!-- /.pricing-package -->
-                  </div>
-                  <!-- pricing item #3-->
-                  <div class="h-100">
-                    <div class="pricing-package">
-                      <div class="package__body">
-                        <h4 class="package__title">Business Plan</h4>
-                        <p class="package__desc">Our highly trained technicians will set-up your security system so you
-                          don’t
-                          have to. They show you how to work your equipment.</p>
-                        <div class="d-flex mb-40">
-                          <div class="package__icon">
-                            <i class="icon-notification"></i>
-                          </div><!-- /.package__icon -->
-                          <div class="package__icon">
-                            <i class="icon-surveillance2"></i>
-                          </div><!-- /.package__icon -->
-                          <div class="package__icon">
-                            <i class="icon-smart-control"></i>
-                          </div><!-- /.package__icon -->
-                        </div>
-                        <ul class="package__list list-items-layout4 list-unstyled">
-                          <li class="list__item">Enterprise Network Video Recorders</li>
-                          <li class="list__item">Streaming video network or Internet</li>
-                          <li class="list__item">Intelligent video technology storage</li>
-                          <li class="list__item">Networked with distributed video</li>
-                          <li class="list__item">Advanced management software</li>
-                        </ul>
-                      </div><!-- /.package__body -->
-                      <div class="package__footer">
-                        <div class="package__price">
-                          <span class="package__currency">$</span><span>259</span><span
-                            class="package__period">/Month</span>
-                        </div>
-                        <a href="locations.html#" class="btn btn__secondary btn__xl">
-                          <span>Get Started Now</span>
-                          <i class="icon-arrow-right"></i>
-                        </a>
-                      </div><!-- /.package__footer -->
-                    </div><!-- /.pricing-package -->
-                  </div>
-                </div><!-- /.carousel-->
-              </div><!-- /.packages-rapper -->
-            </div><!-- /.col-lg-5 -->
-          </div><!-- /.contact-panel -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.contact layout 3 -->
+                  </div></div></form>
+            </div></div></div></div></section>
 
     <!-- ========================
       Features layout1
@@ -394,8 +237,8 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="heading-layout2 mb-50">
-              <h2 class="heading__subtitle">Tailored Solutions For Your Security Priorities</h2>
-              <h3 class="heading__title">Customize The Effective System For Your Home!</h3>
+              <h2 class="heading__subtitle">Nationwide Reach, Local Expertise</h2>
+              <h3 class="heading__title">Your Trusted Security Partner, Wherever You Are</h3>
             </div><!-- /heading -->
           </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
@@ -405,12 +248,10 @@
             <div class="feature-item">
               <div class="feature__body">
                 <div class="feature__icon">
-                  <i class="icon-smart-control"></i>
+                  <i class="icon-shield"></i>
                 </div><!-- /.feature__icon -->
-                <h4 class="feature__title">Easy To Setup And Use
-                </h4>
-                <p class="feature__desc">We’ll customize the right system for your home’s needs. If someone forces you
-                  to disarm system, your Duress PIN will secretly alert authorities.</p>
+                <h4 class="feature__title">Consistent, High Standards</h4>
+                <p class="feature__desc">Every Gatun Security office operates under the same strict protocols and commitment to excellence, ensuring you receive the highest quality service no matter the location.</p>
               </div><!-- /.feature__body -->
             </div><!-- /.feature-item -->
           </div><!-- /.col-lg-3 -->
@@ -419,11 +260,10 @@
             <div class="feature-item">
               <div class="feature__body">
                 <div class="feature__icon">
-                  <i class="icon-surveillance"></i>
+                  <i class="icon-search-2"></i>
                 </div><!-- /.feature__icon -->
-                <h4 class="feature__title">Faster Emergency Dispatch</h4>
-                <p class="feature__desc">Secret Alerts quietly alert you if someone accesses private areas, without
-                  sounding an alarm. Do it right from your phone anytime.</p>
+                <h4 class="feature__title">Local Area Expertise</h4>
+                <p class="feature__desc">Our local teams possess in-depth knowledge of their operational areas, allowing for more effective, tailored security strategies that address specific regional challenges.</p>
               </div><!-- /.feature__body -->
             </div><!-- /.feature-item -->
           </div><!-- /.col-lg-3 -->
@@ -432,18 +272,17 @@
             <div class="feature-item">
               <div class="feature__body">
                 <div class="feature__icon">
-                  <i class="icon-burglar"></i>
+                  <!-- <i class="icon-phone"></i> -->
                 </div><!-- /.feature__icon -->
-                <h4 class="feature__title">Faster Emergency Dispatch</h4>
-                <p class="feature__desc">Your system arrives ready to work. No drilling or tools needed. If you aren't
-                  100% satisfied, return it for a full refund even pay return shipping.</p>
+                <h4 class="feature__title">24/7 National Support</h4>
+                <p class="feature__desc">Our network of offices is supported by a 24/7 national control center, ensuring seamless communication and rapid deployment of resources whenever and wherever you need them.</p>
               </div><!-- /.feature__body -->
             </div><!-- /.feature-item -->
           </div><!-- /.col-lg-3 -->
         </div><!-- /.row -->
         <div class="row">
           <div class="col-12 text-center mt-30">
-            <a href="contact-us.html" class="btn btn__primary btn__outlined btn__xl">Get A Free Quote</a>
+            <a href="{{ route('get-quote') }}" class="btn btn__primary btn__outlined btn__xl">Request a Nationwide Consultation</a>
           </div><!-- /.col-lg-12 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
