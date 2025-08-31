@@ -20,12 +20,12 @@
                 <a href="{{ route('our-location') }}" class="nav__item-link {{ request()->routeIs('our-location') ? 'active' : '' }}">Our Locations</a>
               </li><!-- /.nav-item -->
               <li class="nav__item has-dropdown">
-                <a href="{{ route('services') }}" class="dropdown-toggle nav__item-link {{ request()->routeIs('services', 'retail-security', 'concierge', 'key-holding', 'sia-license-staff', 'rapid-alarm-response', 'sia-door-supervisors', '24-hour-mobile-guarding', '24-hour-call-out', 'cctv-installation-monitoring', 'site-events-property-security', 'security-dogs', 'escort', 'bouncers') ? 'active' : '' }}">Services</a>
+                <a  class="dropdown-toggle nav__item-link {{ request()->routeIs('services', 'retail-security', 'concierge', 'key-holding', 'sia-license-staff', 'rapid-alarm-response', 'sia-door-supervisors', '24-hour-mobile-guarding', '24-hour-call-out', 'cctv-installation-monitoring', 'site-events-property-security', 'security-dogs', 'escort', 'bouncers') ? 'active' : '' }}">Services</a>
                 <ul class="dropdown-menu wide-dropdown-menu">
                   <li class="nav__item">
                     <div class="row mx-0">
                       <div class="col-sm-6 dropdown-menu-col">
-                        <a href="{{ route('services') }}" class="nav__item-link dropdown-menu-title">Services</a>
+                        <a  class="nav__item-link dropdown-menu-title">Services</a>
                         <ul class="nav flex-column">
                           <li class="nav__item"><a class="nav__item-link" href="{{ route('retail-security') }}">Retail Security</a></li>
                           <li class="nav__item"><a class="nav__item-link" href="{{ route('concierge') }}">Concierge</a></li>
